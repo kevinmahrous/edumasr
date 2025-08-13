@@ -1,1 +1,1 @@
-<template></template>
+<template><h1>A Job Seeker</h1></template>

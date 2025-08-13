@@ -1,1 +1,1 @@
-<template></template>
+<template><h1>Ministry Supervisor</h1></template>

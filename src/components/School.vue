@@ -1,1 +1,1 @@
-<template></template>
+<template><h1>School Supervisor</h1></template>

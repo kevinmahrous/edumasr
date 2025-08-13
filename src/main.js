@@ -2,10 +2,11 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import PrimeVue from 'primevue/config';
+import 'primeicons/primeicons.css';
 import Aura from '@primeuix/themes/aura';
 import { ref, onValue } from 'firebase/database';
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth, rtdb } from './firebase'; // ✅ import initialized versions
+import { auth, rtdb } from './firebase'; 
 import './style.css';
 
 const app = createApp(App);

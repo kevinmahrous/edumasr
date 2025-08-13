@@ -1,1 +1,134 @@
 @import "tailwindcss";
+body {
+  font-family: 'Inter', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body.light-theme {
+  background-color: #F5F1EA;
+  color: #0D213F;
+
+  --background: #0D213F;
+  --text: #F5F1EA;
+  --hover: #E8B525;
+}
+
+body.dark-theme {
+  background-color: #0D213F;
+  color: #F5F1EA;
+
+  --background: #F5F1EA;
+  --text: #0D213F;
+  --hover: #dcb540;
+}
+
+.p-button:not(.p-button-danger):not(.p-button-secondary):not(.p-button-success):not(.p-button-warning):not(.p-button-info):not(.p-button-help) {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+  border: 2px solid var(--background) !important;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+.p-button:not(.p-button-danger):not(.p-button-secondary):not(.p-button-success):not(.p-button-warning):not(.p-button-info):not(.p-button-help):hover {
+  background-color: var(--hover) !important;
+  border-color: var(--hover) !important;
+  color: var(--text) !important;
+}
+
+.p-inputtext {
+  background-color: var(--text) !important;
+  color: var(--background) !important;
+  border: 1px solid var(--background) !important;
+}
+
+.p-inputtext::placeholder {
+  color: var(--background) !important;
+}
+
+.p-textarea {
+  background-color: var(--text) !important;
+  color: var(--background) !important;
+  border: 1px solid var(--background) !important;
+}
+
+.p-textarea::placeholder {
+  color: var(--background) !important;
+}
+
+.p-menubar {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+.p-menubar .p-menuitem-text {
+  color: var(--text) !important;
+}
+
+.p-menubar-end a:hover {
+  color: var(--hover) !important;
+}
+
+.p-select {
+  background-color: var(--text) !important;
+  color: var(--background) !important;
+  border: 1px solid var(--background) !important;
+}
+
+.p-select .p-placeholder {
+  color: var(--background) !important;
+}
+
+.p-select-label {
+  color: var(--background) !important;
+}
+
+.p-select-panel {
+  background-color: var(--text) !important;
+  color: var(--background) !important;
+  border: 1px solid var(--background) !important;
+}
+
+.p-select-item:hover {
+  background-color: var(--hover) !important;
+  color: var(--text) !important;
+}
+
+.p-select-option:hover {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+.p-select-option:not(:hover) {
+  background-color: var(--text) !important;
+  color: var(--background) !important;
+}
+
+.p-select-option-selected {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+.p-select-option-selected:hover {
+  color: var(--text) !important;
+}
+
+.p-select-item.p-highlight {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+.p-radiobutton-box {
+  background: var(--text) !important;
+  border-color: var(--background) !important;
+}
+
+.p-radiobutton-icon {
+  background: var(--background) !important;
+}

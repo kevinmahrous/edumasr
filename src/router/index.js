@@ -3,11 +3,12 @@ import Home from '../components/Home.vue';
 import Contact from '../components/Contact.vue';
 import About from '../components/About.vue';
 import Student from '../components/Student.vue';
-
 import Job from '../components/Job.vue';
 import Ministry from '../components/Ministry.vue';
 import School from '../components/School.vue';
 import Parent from '../components/Parent.vue';
+import Login from '../components/Login.vue';
+import Signup from '../components/Signup.vue';
 const routes = [
   { path: '/', component: Home },
   { path: '/student', component: Student, meta: { role: 'student' } },
@@ -16,7 +17,9 @@ const routes = [
   { path: '/School', component: School, meta: { role: 'school' } },
   { path: '/Parent', component: Parent, meta: { role: 'parent' } },
   { path: '/contact', component: Contact },
-  { path: '/about', component: About }
+  { path: '/about', component: About },
+  { path: '/login', component: Login },
+  { path: '/signup', component: Signup }
 ];
 export default createRouter({
   history: createWebHistory(),
